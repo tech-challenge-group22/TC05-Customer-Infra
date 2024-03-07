@@ -11,7 +11,7 @@ provider "aws" {
 
 terraform {
   backend "s3" {
-    bucket         = "tc05-tfstate-customer"
+    bucket         = "tc05tfstate-customer"
     key            = "terraform.tfstate"
     region         = "us-east-1"
   }
