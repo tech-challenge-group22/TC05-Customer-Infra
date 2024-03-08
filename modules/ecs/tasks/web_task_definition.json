@@ -48,6 +48,30 @@
         "value": "${secret_key_jwt_token}"
       },
       {
+        "name": "MSG_POLLING_INTERVAL",
+        "value": "${msg_polling_interval}"
+      },
+      {
+        "name": "AWS_MESSAGE_GROUP",
+        "value": "${aws_message_group}"
+      },
+      {
+        "name": "AWS_INPUT_PAYMENT_STATUS_NOTIFICATION_URL",
+        "value": "${aws_input_payment_status_notification_url}"
+      },
+      {
+        "name": "NODEMAILER_PORT",
+        "value": "${nodemailer_port}"
+      },
+      {
+        "name": "NODEMAILER_USER",
+        "value": "${nodemailer_user}"
+      },
+      {
+        "name": "NODEMAILER_PASS",
+        "value": "${nodemailer_pass}"
+      },
+      {
         "name": "PORT",
         "value": "3000"
       }

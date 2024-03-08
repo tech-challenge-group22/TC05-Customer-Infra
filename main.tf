@@ -60,4 +60,10 @@ module "ecs" {
   execution_arn_role  = "${var.lab_role_arn}"
   rds_id              = "${module.rds.rds_id}"
   secret_key_jwt_token = "${var.secret_key_jwt_token}"
+  msg_polling_interval = "${var.msg_polling_interval}"
+  aws_message_group = "${var.aws_message_group}"
+  aws_input_payment_status_notification_url = "${var.aws_input_payment_status_notification_url}"
+  nodemailer_port = "${var.nodemailer_port}"
+  nodemailer_user = "${var.nodemailer_user}"
+  nodemailer_pass = "${var.nodemailer_pass}"
 }

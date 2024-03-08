@@ -37,8 +37,14 @@ resource "aws_ecs_task_definition" "web" {
     db_password = "${var.database_password}"
     db_host    = "${var.dbhost}"
     database_name   = "${var.database_name}"
-    secret_key_jwt_token   = "${var.secret_key_jwt_token}"
-    log_group       = "${aws_cloudwatch_log_group.customer.name}"
+    secret_key_jwt_token = "${var.secret_key_jwt_token}"
+    msg_polling_interval = "${var.msg_polling_interval}"
+    aws_message_group    = "${var.aws_message_group}"
+    aws_input_payment_status_notification_url = "${var.aws_input_payment_status_notification_url}"
+    nodemailer_port   = "${var.nodemailer_port}"
+    nodemailer_user   = "${var.nodemailer_user}"
+    nodemailer_pass   = "${var.nodemailer_pass}"
+    log_group         = "${aws_cloudwatch_log_group.customer.name}"
     aws_region = "us-east-1"
   })
   requires_compatibilities = ["FARGATE"]

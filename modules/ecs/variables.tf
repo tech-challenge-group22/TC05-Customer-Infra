@@ -59,3 +59,27 @@ variable "rds_id" {
 variable "secret_key_jwt_token" {
   description = "jwt secret"
 }
+
+variable "msg_polling_interval" {
+  description = "jwt secret"
+}
+
+variable "aws_message_group" {
+  description = "jwt secret"
+}
+
+variable "aws_input_payment_status_notification_url" {
+  description = "jwt secret"
+}
+
+variable "nodemailer_port" {
+  description = "jwt secret"
+}
+
+variable "nodemailer_user" {
+  description = "jwt secret"
+}
+
+variable "nodemailer_pass" {
+  description = "jwt secret"
+}

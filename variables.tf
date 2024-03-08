@@ -25,3 +25,24 @@ variable "lab_role_arn" {
 variable "secret_key_jwt_token" {
   description = "JWT secret"
 }
+
+variable "msg_polling_interval" {
+  description = "Polling interval"
+}
+
+variable "aws_message_group" {
+  description = "Message Group"
+}
+
+variable "aws_input_payment_status_notification_url" {
+  description = "SQS Payment status"
+}
+
+variable "nodemailer_port" {
+}
+
+variable "nodemailer_user" {
+}
+
+variable "nodemailer_pass" {
+}
