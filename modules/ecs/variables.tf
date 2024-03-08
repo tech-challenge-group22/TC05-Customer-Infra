@@ -55,3 +55,7 @@ variable "dbhost" {
 variable "rds_id" {
   description = "dbhost"
 }
+
+variable "secret_key_jwt_token" {
+  description = "jwt secret"
+}

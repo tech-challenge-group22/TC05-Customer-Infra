@@ -21,3 +21,7 @@ variable "database_password" {
 variable "lab_role_arn" {
   description = "The lab role"
 }
+
+variable "secret_key_jwt_token" {
+  description = "JWT secret"
+}

@@ -37,6 +37,7 @@ resource "aws_ecs_task_definition" "web" {
     db_password = "${var.database_password}"
     db_host    = "${var.dbhost}"
     database_name   = "${var.database_name}"
+    secret_key_jwt_token   = "${var.secret_key_jwt_token}"
     log_group       = "${aws_cloudwatch_log_group.customer.name}"
     aws_region = "us-east-1"
   })

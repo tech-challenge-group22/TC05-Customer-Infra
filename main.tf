@@ -59,4 +59,5 @@ module "ecs" {
   dbhost              = "${module.rds.rds_address}"
   execution_arn_role  = "${var.lab_role_arn}"
   rds_id              = "${module.rds.rds_id}"
+  secret_key_jwt_token = "${var.secret_key_jwt_token}"
 }
