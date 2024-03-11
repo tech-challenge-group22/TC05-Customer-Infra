@@ -5,6 +5,7 @@ CREATE TABLE customers (
     customer_cpf VARCHAR(11) UNIQUE,
     customer_name VARCHAR(100),
     customer_email VARCHAR(100),
+    customer_telephone VARCHAR(15),
     is_active BOOLEAN NOT NULL
 );
 
