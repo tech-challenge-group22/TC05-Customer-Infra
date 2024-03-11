@@ -23,6 +23,9 @@ jobs:
       TF_VAR_nodemailer_port: ${{ secrets.TF_VAR_NODEMAILER_PORT}}
       TF_VAR_nodemailer_user: ${{ secrets.TF_VAR_NODEMAILER_USER}}
       TF_VAR_nodemailer_pass: ${{ secrets.TF_VAR_NODEMAILER_PASS}}
+      TF_VAR_twilio_auth_token: ${{ secrets.TF_VAR_TWILIO_AUTH_TOKEN}}
+      TF_VAR_twilio_phone_number: ${{ secrets.TF_VAR_TWILIO_PHONE_NUMBER}}
+      TF_VAR_twilio_account_id: ${{ secrets.TF_VAR_TWILIO_ACCOUNT_ID}}
     steps:
       - name: Checkout Repo
         uses: actions/checkout@v3
