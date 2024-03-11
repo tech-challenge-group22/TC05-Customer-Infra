@@ -72,6 +72,18 @@
         "value": "${nodemailer_pass}"
       },
       {
+        "name": "TWILIO_AUTH_TOKEN",
+        "value": "${twilio_auth_token}"
+      },
+      {
+        "name": "TWILIO_PHONE_NUMBER",
+        "value": "${twilio_phone_number}"
+      },
+      {
+        "name": "TWILIO_ACCOUNT_ID",
+        "value": "${twilio_account_id}"
+      },
+      {
         "name": "PORT",
         "value": "3000"
       }

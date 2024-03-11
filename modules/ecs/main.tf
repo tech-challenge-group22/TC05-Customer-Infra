@@ -44,6 +44,9 @@ resource "aws_ecs_task_definition" "web" {
     nodemailer_port   = "${var.nodemailer_port}"
     nodemailer_user   = "${var.nodemailer_user}"
     nodemailer_pass   = "${var.nodemailer_pass}"
+    twilio_account_id   = "${var.twilio_account_id}"
+    twilio_auth_token   = "${var.twilio_auth_token}"
+    twilio_phone_number   = "${var.twilio_phone_number}"
     log_group         = "${aws_cloudwatch_log_group.customer.name}"
     aws_region = "us-east-1"
   })

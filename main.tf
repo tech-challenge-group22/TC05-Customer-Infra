@@ -66,4 +66,7 @@ module "ecs" {
   nodemailer_port = "${var.nodemailer_port}"
   nodemailer_user = "${var.nodemailer_user}"
   nodemailer_pass = "${var.nodemailer_pass}"
+  twilio_account_id   = "${var.twilio_account_id}"
+  twilio_auth_token   = "${var.twilio_auth_token}"
+  twilio_phone_number   = "${var.twilio_phone_number}"
 }

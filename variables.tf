@@ -46,3 +46,12 @@ variable "nodemailer_user" {
 
 variable "nodemailer_pass" {
 }
+
+variable "twilio_account_id" {
+}
+
+variable "twilio_auth_token" {
+}
+
+variable "twilio_phone_number" {
+}
