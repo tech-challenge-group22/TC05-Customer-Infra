@@ -40,6 +40,10 @@ module "rds" {
   instance_class    = "db.t2.micro"
 }
 
+module "ecr" {
+  source = "./modules/ecr"
+}
+
 module "ecs" {
   source              = "./modules/ecs"
   prefix         = "customer"
@@ -52,6 +56,7 @@ module "ecs" {
     module.networking.security_groups_ids,
     module.rds.db_access_sg_id
   ]
+  ecr_url             = "${module.ecr.ecr_url}"
   database_endpoint   = "${module.rds.rds_address}"
   database_name       = "${var.database_name}"
   database_username   = "${var.database_username}"
@@ -69,4 +74,5 @@ module "ecs" {
   twilio_account_id   = "${var.twilio_account_id}"
   twilio_auth_token   = "${var.twilio_auth_token}"
   twilio_phone_number   = "${var.twilio_phone_number}"
+  depends_on = [ module.ecr ]
 }

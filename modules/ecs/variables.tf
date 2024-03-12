@@ -92,3 +92,6 @@ variable "twilio_auth_token" {
 
 variable "twilio_phone_number" {
 }
+
+variable "ecr_url" {
+}
