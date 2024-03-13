@@ -44,8 +44,8 @@ jobs:
       - name: Terraform Init
         id: init
         run: |
-          terraform init
-
+          terraform init -backend-config="bucket=${{vars.TF_VAR_TFSTATE_CUSTOMER}}" -backend-config="key=terraform.tfstate" -backend-config="region=${{ secrets.AWS_REGION }}"
+      
       - name: Terraform Destroy ecs
         run: terraform destroy -target module.ecs -auto-approve
 

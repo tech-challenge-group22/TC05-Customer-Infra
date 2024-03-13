@@ -41,10 +41,10 @@ jobs:
       - name: Setup Terraform
         uses: hashicorp/setup-terraform@v2
 
-      - name: Terraform Init
+      - name: terraform init
         id: init
         run: |
-          terraform init
+          terraform init -backend-config="bucket=${{vars.TF_VAR_TFSTATE_CUSTOMER}}" -backend-config="key=terraform.tfstate" -backend-config="region=${{ secrets.AWS_REGION }}"
         
       - name: Terraform Plan
         run: terraform plan
