@@ -34,7 +34,7 @@ variable "aws_message_group" {
   description = "Message Group"
 }
 
-variable "aws_input_payment_status_notification_url" {
+variable "payment_status_notification" {
   description = "SQS Payment status"
 }
 

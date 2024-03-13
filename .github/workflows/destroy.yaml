@@ -19,7 +19,7 @@ jobs:
       TF_VAR_database_password: ${{ secrets.TF_VAR_DATABASE_PASSWORD}}
       TF_VAR_msg_polling_interval: ${{ vars.TF_VAR_SQS_POLLING_INTERVAL}}
       TF_VAR_aws_message_group: ${{ vars.TF_VAR_SQS_MESSAGE_GROUP}}
-      TF_VAR_aws_input_payment_status_notification_url: ${{ vars.TF_VAR_AWS_INPUT_PAYMENT_STATUS_NOTIFICATION_URL}}
+      TF_VAR_payment_status_notification: ${{ vars.TF_VAR_PAYMENT_STATUS_NOTIFICATION}}
       TF_VAR_nodemailer_port: ${{ secrets.TF_VAR_NODEMAILER_PORT}}
       TF_VAR_nodemailer_user: ${{ secrets.TF_VAR_NODEMAILER_USER}}
       TF_VAR_nodemailer_pass: ${{ secrets.TF_VAR_NODEMAILER_PASS}}

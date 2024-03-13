@@ -57,7 +57,7 @@
       },
       {
         "name": "AWS_INPUT_PAYMENT_STATUS_NOTIFICATION_URL",
-        "value": "${aws_input_payment_status_notification_url}"
+        "value": "${payment_status_notification}"
       },
       {
         "name": "NODEMAILER_PORT",

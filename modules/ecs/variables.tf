@@ -64,7 +64,7 @@ variable "aws_message_group" {
   description = "jwt secret"
 }
 
-variable "aws_input_payment_status_notification_url" {
+variable "payment_status_notification" {
   description = "jwt secret"
 }
 
